@@ -10,7 +10,7 @@ apply plugin: "com.adarshr.test-logger"
 
 description = 'Play audio to discord voice channels'
 mainClassName = "lavalink.server.Launcher"
-version = "${versionFromTag()}".toString()
+version = "3.3.1.1-NeoModule.1"
 ext {
     moduleName = 'Lavalink-Server'
 }
@@ -37,7 +37,7 @@ dependencies {
     compile group: 'space.npstr.Magma', name: 'magma', version: magmaVersion
     compile group: 'com.sedmelluq', name: 'lavaplayer', version: lavaplayerVersion
     compile group: 'com.sedmelluq', name: 'lavaplayer-ext-youtube-rotator', version: lavaplayerIpRotatorVersion
-    compile group: 'com.sedmelluq', name: 'jda-nas', version: jdaNasVersion 
+    compile group: 'com.sedmelluq', name: 'jda-nas', version: jdaNasVersion
     compile group: 'org.jetbrains.kotlin', name: 'kotlin-reflect', version: kotlinVersion
 
     compile group: 'com.github.shredder121', name: 'jda-async-packetprovider', version: jappVersion
@@ -60,6 +60,9 @@ dependencies {
     compile group: 'io.prometheus', name: 'simpleclient_servlet', version: prometheusVersion
 
     testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: springBootVersion
+
+    // NeoJukePro Dep
+    compile 'page.nafuchoco:NeoJukePro:1.6.0'
 }
 
 processResources {
@@ -92,6 +95,7 @@ compileTestKotlin {
     }
 }
 
+/*
 @SuppressWarnings("GrMethodMayBeStatic")
 String versionFromTag() {
 
@@ -120,3 +124,4 @@ void versionTxt() {
 }
 
 versionTxt()
+*/
