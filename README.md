@@ -1,4 +1,23 @@
 # Lavalink
+
+**このリポジトリはNeoJukeProで使用可能なNeoModuleによるオーディオソースの追加に対応した改造版Lavalinkです。  
+このリポジトリで行われた変更が本家リポジトリに統合されることはありません。  
+またこのリポジトリを用いてビルドされたLavalinkのサポートはNAFU_atが行います。  
+Lavalink本来の機能も含め本家開発者への問い合わせはお控えください。**
+
+**This repository is a modified version of Lavalink that supports the addition of audio sources with the NeoModule available in NeoJukePro.  
+  Changes made in this repository will not be integrated into the original repository.  
+  Support for Lavalink built from this repository is provided by NAFU_at.  
+  Please do not contact the original developers of Lavalink, including the original features of Lavalink.**
+
+## How to get.
+Please download the latest version from Github Release.
+
+## License
+Apache License 2.0 is applied to the code added by NAFU_at.  
+Otherwise, please refer to the original license for the original code.
+
+---
 Standalone audio sending node based on Lavaplayer and JDA-Audio.
 Allows for sending audio without it ever reaching any of your shards.
 
