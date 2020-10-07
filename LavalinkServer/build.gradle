@@ -10,7 +10,7 @@ apply plugin: "com.adarshr.test-logger"
 
 description = 'Play audio to discord voice channels'
 mainClassName = "lavalink.server.Launcher"
-version = "3.3.1.1-NeoModule.1"
+version = "3.3.1.4-NeoModule.1"
 ext {
     moduleName = 'Lavalink-Server'
 }
