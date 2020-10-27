@@ -11,5 +11,7 @@ build/*
 .project
 .classpath
 .settings
+/Testbot/build/
+/Testbot/out/
 
 .DS_Store
