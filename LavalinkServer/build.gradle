@@ -10,7 +10,7 @@ apply plugin: "com.adarshr.test-logger"
 
 description = 'Play audio to discord voice channels'
 mainClassName = "lavalink.server.Launcher"
-version = "3.3.1.4-NeoModule.1"
+version = "3.3.2-NeoModule.1"
 ext {
     moduleName = 'Lavalink-Server'
 }
@@ -34,7 +34,7 @@ bootRun {
 }
 
 dependencies {
-    compile (group: 'moe.kyokobot.koe', name: 'core', version: koeVersion) {
+    compile(group: 'moe.kyokobot.koe', name: 'core', version: koeVersion) {
         // This version of SLF4J does not recognise Logback 1.2.3
         exclude group: "org.slf4j", module: "slf4j-api"
     }
@@ -64,6 +64,7 @@ dependencies {
 
     // NeoJukePro Dep
     compile 'page.nafuchoco:NeoJukePro:1.6.0'
+    compile 'com.github.FredBoat:Lavalink-Client:92a858d'
 }
 
 processResources {
