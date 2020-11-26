@@ -10,7 +10,7 @@ apply plugin: "com.adarshr.test-logger"
 
 description = 'Play audio to discord voice channels'
 mainClassName = "lavalink.server.Launcher"
-version = "3.3.2.1-NeoModule.1"
+version = "3.3.2.1-NeoModule.2"
 ext {
     moduleName = 'Lavalink-Server'
 }
@@ -62,7 +62,7 @@ dependencies {
     testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: springBootVersion
 
     // NeoJukePro Dep
-    compile 'page.nafuchoco:NeoJukePro:1.6.0'
+    compile 'com.github.nafu-at:NeoJukePro:1.7.0'
     compile 'com.github.FredBoat:Lavalink-Client:92a858d'
 }
 
