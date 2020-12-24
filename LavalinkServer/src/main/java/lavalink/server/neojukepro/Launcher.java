@@ -23,9 +23,10 @@ import page.nafuchoco.neojukepro.core.NeoJukeLauncher;
 import page.nafuchoco.neojukepro.core.command.CommandRegistry;
 import page.nafuchoco.neojukepro.core.config.NeoJukeConfig;
 import page.nafuchoco.neojukepro.core.database.DatabaseConnector;
+import page.nafuchoco.neojukepro.core.guild.NeoGuildRegistry;
+import page.nafuchoco.neojukepro.core.http.discord.DiscordAppInfo;
 import page.nafuchoco.neojukepro.core.module.ModuleManager;
 import page.nafuchoco.neojukepro.core.player.CustomSourceRegistry;
-import page.nafuchoco.neojukepro.core.player.GuildPlayerRegistry;
 
 @Component
 public class Launcher implements NeoJukeLauncher {
@@ -57,6 +58,16 @@ public class Launcher implements NeoJukeLauncher {
     }
 
     @Override
+    public DiscordAppInfo getDiscordAppInfo() {
+        return null;
+    }
+
+    @Override
+    public NeoGuildRegistry getGuildRegistry() {
+        return null;
+    }
+
+    @Override
     public ModuleManager getModuleManager() {
         return moduleManager;
     }
@@ -78,11 +89,6 @@ public class Launcher implements NeoJukeLauncher {
 
     @Override
     public JdaLavalink getLavaLink() {
-        return null;
-    }
-
-    @Override
-    public GuildPlayerRegistry getPlayerRegistry() {
         return null;
     }
 }
